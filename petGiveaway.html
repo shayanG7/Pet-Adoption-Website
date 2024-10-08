@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shay's Adoption Center - Contact Us</title>
+
+    <link rel="stylesheet" href="Question8.css">
+
+</head>
+<body>
+    
+    <header> 
+        <h1>
+            Shay's Adoption Center 
+            <a href="Question8.html"> <img src="img/pets.jpg" alt="picture of a puppy and a kitten"> </a> 
+        </h1>
+    </header>
+
+    <nav class="sidebar">
+        <a href="Question8.html"> Home page </a>
+        <a href="pets.html"> Browse Available Pets </a>
+        <a href="findDogOrCat.html"> Find a dog/cat </a>
+        <a href="dogCare.html"> Dog Care </a>
+        <a href="catCare.html"> Cat Care </a>
+        <a href="petGiveaway.html"> Have a pet to give away </a>
+        <a href="contactUs.html"> Contact Us </a>
+    </nav>
+
+    <div class="mainContent">
+
+        <h2>Have A Pet to Give Away?</h2>
+
+
+        <form action="/petToGiveAway.txt" id="petGiveaway">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fname">First Name:</label>  
+                <input type="text" id="fname" name="fname"> <br><br>
+                <label for="lname">Last Name:</label> <input type="text" id="lname" name="lname"> <br><br>
+                <label for="giveawayEmail">E-mail:</label>  <input type="email" id="giveawayEmail" name="giveawayEmail">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Pet Information</legend>
+                <div>General Animal Information </div>
+                <p>
+                    <input type="radio" name="catOrDog" value="cat" id="cat" class="catOrDog">
+                    <label for="cat"> Cat </label>
+                    <input type="radio" name="catOrDog" value="dog" id="dog" class="catOrDog">
+                    <label for="dog"> Dog </label>
+                </p>
+
+                <p>
+                    <label for="breed"> Breed of Dog / Cat </label>
+                    <input type="text" id="breed" name="breed">
+
+                    <label for="age">Age of Animal</label>
+                    <input type="number" id="age" name="age" min="0" max="25">
+                </p>
+
+                <!-- <div>Animal Gender</div> -->
+                <input type="radio" name="animalGender" value="male" id="male" class="maleOrFemale">
+                <label for="male"> Male </label>
+                <input type="radio" name="animalGender" value="Female" id="Female" class="maleOrFemale">
+                <label for="Female"> Female </label>
+
+                <div>Check the following boxes that apply. This animal: </div>
+
+                <label>
+                    <input type="checkbox" name="get-along-form2" value="otherDogs" id="otherDogs">
+                    Gets along with other dogs
+                </label>
+                <label>
+                    <input type="checkbox" name="get-along-form2" value="otherCats" id="otherCats">
+                    Gets along with other cats
+                </label>
+                <label>
+                    <input type="checkbox" name="get-along-form2" value="smallChildren" id="smallChildren">
+                    Is suitable for families with small children
+                </label>
+
+                <div>Additional comments about the animal:</div>
+                <input type="text" name="addPetInfo" id="addPetInfo" size="75">
+
+            </fieldset>
+
+        </form>
+
+        <p>
+            <input type="submit" form="petGiveaway">
+            <input type="reset" form="petGiveaway" value="Clear">
+        </p>
+        
+    </div>
+
+    <footer>
+        <a href="disclaimerStatement.html"> Privacy / Disclaimer Statement </a>
+    </footer>
+
+
+    <script src="Question7.js"></script>
+
+</body>
+</html>

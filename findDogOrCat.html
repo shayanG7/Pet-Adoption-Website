@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shay's Adoption Center - Find a Dog or Cat</title>
+
+    <link rel="stylesheet" href="Question8.css">
+
+</head>
+<body>
+
+    <header>
+    <h1>
+        Shay's Adoption Center 
+        <a href="Question8.html"> <img src="img/pets.jpg" alt="picture of a puppy and a kitten"> </a> </h1>
+    </header>
+
+    <nav class="sidebar">
+            <a href="Question8.html"> Home page </a>
+            <a href="pets.html"> Browse Available Pets </a>
+            <a href="findDogOrCat.html"> Find a dog/cat </a>
+            <a href="dogCare.html"> Dog Care </a> 
+            <a href="catCare.html"> Cat Care </a> 
+            <a href="petGiveaway.html"> Have a pet to give away </a> 
+            <a href="contactUs.html"> Contact Us </a> 
+    </nav>
+
+    <div class="mainContent">
+
+        <h2>Find a Dog / Cat</h2><br>
+
+    <!-- Cat Form -->
+    <fieldset>
+        <legend> Find a cat </legend>
+            <form action="/catForm.txt" id="catForm">
+
+            <p> Cat Breed
+                <br> 
+                <input type="radio" name="catBreeds" value="ragdoll" id="ragdoll" class="catBreeds">
+                <label for="ragdoll"> Ragdoll </label>
+
+                <input type="radio" name="catBreeds" value="persian" id="persian" class="catBreeds">
+                <label for="persian"> Persian </label>
+
+                <input type="radio" name="catBreeds" value="britishShorthair" id="britishShorthair" class="catBreeds">
+                <label for="britishShorthair"> British Shorthair </label>
+
+                <input type="radio" name="catBreeds" value="americanShorthair" id="americanShorthair" class="catBreeds">
+                <label for="americanShorthair"> American Shorthair </label>
+                <br>
+                <input type="radio" name="catBreeds" value="siberian" id="siberian" class="catBreeds">
+                <label for="siberian"> Siberian </label>
+
+                <input type="radio" name="catBreeds" value="sphynx" id="sphynx" class="catBreeds">
+                <label for="sphynx"> Sphynx </label>
+
+                <input type="radio" name="catBreeds" value="bengal" id="bengal" class="catBreeds">
+                <label for="bengal"> Bengal </label>
+
+                <input type="radio" name="catBreeds" value="scottishFold" id="scottishFold" class="catBreeds">
+                <label for="scottishFold"> Scottish Fold </label>
+                <br>
+                <input type="radio" name="catBreeds" value="doesn'tMatter" id="dmCat" class="catBreeds">
+                <label for="dmCat"> Doesn't matter </label>
+            </p>
+
+            <p> Preferred Age
+                <select name="catAge">
+                    <option>0-4 years</option>
+                    <option>5-9 years</option>
+                    <option>10-14 years</option>
+                    <option>14-19 years</option>
+                    <option>Doesn't matter</option>
+                </select>
+            </p>
+
+            <p> Preferred Gender
+                <br>
+                <input type="radio" name="catGender" value="male" id="catMale" class="catGenders">
+                <label for="catMale"> Male </label>
+
+                <input type="radio" name="catGender" value="female" id="catFemale" class="catGenders">
+                <label for="catFemale"> Female </label>
+                
+                <input type="radio" name="catGender" value="doesn'tMatter" id="catGenderDM" class="catGenders">
+                <label for="catGenderDM"> Doesn't Matter </label>
+            </p>
+
+            <p> Will he/she need to get along with:
+                
+                <label>
+                <input type="checkbox" name="get-along-form" value="cgaOtherDogs" id="cgaOtherDogs">
+                    Other Dogs 
+                </label>
+
+                <label>
+                <input type="checkbox" name="get-along-form" value="cgaOtherCats" id="cgaOtherCats">
+                    Other Cats 
+                </label>
+
+                <label>
+                    <input type="checkbox" name="get-along-form" value="cgaSmallChildren" id="cgaSmallChildren">
+                        Small Children 
+                    </label>
+            </p>
+
+            </form>
+
+            <p>
+                <input type="submit" form="catForm">
+                <input type="reset" form="catForm" value="Clear">
+            </p>
+    </fieldset>
+    
+
+    <!-- Dog Form -->
+    <fieldset>
+        <legend> Find a dog </legend>
+            <form action="/dogForm.txt" id="dogForm">
+
+            <p> Dog Breed
+                <br> 
+                <input type="radio" name="dogBreeds" value="labradorRetriever" id="labradorRetriever" class="dogBreeds">
+                <label for="labradorRetriever"> Labrador Retriever </label>
+
+                <input type="radio" name="dogBreeds" value="goldenRetriever" id="goldenRetriever" class="dogBreeds">
+                <label for="goldenRetriever"> Golden Retriever </label>
+
+                <input type="radio" name="dogBreeds" value="pug" id="pug" class="dogBreeds">
+                <label for="pug"> Pug </label>
+
+                <input type="radio" name="dogBreeds" value="germanShepherd" id="germanShepherd" class="dogBreeds">
+                <label for="germanShepherd"> German Shepherd </label>
+                <br>
+                <input type="radio" name="dogBreeds" value="poodle" id="poodle" class="dogBreeds">
+                <label for="poodle"> Poodle </label>
+
+                <input type="radio" name="dogBreeds" value="chihuahua" id="chihuahua" class="dogBreeds">
+                <label for="chihuahua"> Chihuahua </label>
+
+                <input type="radio" name="dogBreeds" value="yorkshireTerrier" id="yorkshireTerrier" class="dogBreeds">
+                <label for="yorkshireTerrier"> Yorkshire Terrier </label>
+
+                <input type="radio" name="dogBreeds" value="pitBull" id="pitBull" class="dogBreeds">
+                <label for="pitBull"> Pit Bull </label>
+                <br>
+                <input type="radio" name="dogBreeds" value="doesn'tMatter" id="dmDog" class="dogBreeds">
+                <label for="dmDog"> Doesn't matter </label>
+            </p>
+
+            <p> Preferred Age
+                <select name="dogAge">
+                    <option>0-4 years</option>
+                    <option>5-9 years</option>
+                    <option>10-14 years</option>
+                    <option>14-19 years</option>
+                    <option>Doesn't matter</option>
+                </select>
+            </p>
+
+            <p> Preferred Gender
+                <br>
+                <input type="radio" name="dogGender" value="male" id="dogMale" class="dogGenders">
+                <label for="dogMale"> Male </label>
+
+                <input type="radio" name="dogGender" value="female" id="dogFemale" class="dogGenders">
+                <label for="dogFemale"> Female </label>
+                
+                <input type="radio" name="dogGender" value="doesn'tMatter" id="dgDoesn'tMatter" class="dogGenders">
+                <label for="dgDoesn'tMatter"> Doesn't Matter </label>
+            </p>
+
+            <p> Will he/she need to get along with:
+                
+                <label>
+                <input type="checkbox" name="get-along-form" value="dgaOtherDogs" id="dgaOtherDogs">
+                    Other Dogs 
+                </label>
+
+                <label>
+                <input type="checkbox" name="get-along-form" value="dgaOtherCats" id="dgaOtherCats">
+                    Other Cats 
+                </label>
+
+                <label>
+                    <input type="checkbox" name="get-along-form" value="dgaSmallChildren" id="dgaSmallChildren">
+                        Small Children
+                    </label>
+            </p>
+
+            </form>
+
+            <p>
+                <input type="submit" form="dogForm">
+                <input type="reset" form="dogForm" value="Clear">
+            </p>
+    </fieldset>
+
+    </div>
+
+    <footer>
+        <a href="disclaimerStatement.html"> Privacy/Disclaimer Statement </a>
+    </footer>
+
+    <script src="Question7.js"></script>
+
+</body>
+</html>
